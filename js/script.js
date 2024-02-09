@@ -6,6 +6,7 @@ let procesoFactorial = () =>
     if(isNaN(numeroI))
     {
         alert('El valor ingresado no es un número!');
+        resultadoFinal.textContent = "";
     }
     else
     {
