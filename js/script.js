@@ -2,6 +2,7 @@ let procesoFactorial = () =>
 {
     let numeroFactorial = 1;
     let numeroI = Number.parseInt(document.getElementById("numero").value);
+    let resultadoFinal = document.getElementById('resultado');
     if(isNaN(numeroI))
     {
         alert('El valor ingresado no es un número!');
@@ -12,8 +13,6 @@ let procesoFactorial = () =>
         {
             numeroFactorial *= x;
         }
+        resultadoFinal.textContent = `El factorial del número ${numeroI} es: ${numeroFactorial}`;
     }
-
-    let resultadoFinal = document.getElementById('resultado');
-    resultadoFinal.textContent = `El factorial del número ${numeroI} es: ${numeroFactorial}`;
 }
